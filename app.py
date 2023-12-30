@@ -1,4 +1,4 @@
-from configs import config
+import config
 from services import product
 
 config.config_app()

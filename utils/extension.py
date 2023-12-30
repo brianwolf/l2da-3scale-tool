@@ -1,9 +1,10 @@
 import json
-
 import os
+
 import xmltodict
 import yaml
-from configs import config
+
+import config
 
 
 def xml_to_dict(xml: str) -> any:

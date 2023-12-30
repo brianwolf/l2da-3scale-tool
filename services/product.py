@@ -1,7 +1,7 @@
 import logging
 
-from configs import config
-from utils import rest, extension
+import config
+from utils import extension, rest
 
 
 def create() -> dict:

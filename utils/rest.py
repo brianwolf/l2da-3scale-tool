@@ -1,7 +1,8 @@
 import logging
 
 import requests
-from configs import config
+
+import config
 from utils import extension
 
 
