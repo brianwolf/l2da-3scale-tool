@@ -1,6 +1,5 @@
 import logging
 
-import config
 from utils import extension, rest
 
 
@@ -15,7 +14,9 @@ def create() -> dict:
     if not product:
         product = _create(params)
 
-    product = _update(params, product['id'])
+    params['id'] = product['id']
+
+    product = _update(params)
 
     logging.info('Product -> FINISHED')
     logging.info('-----------------------------------')
@@ -30,10 +31,10 @@ def _get(params: dict) -> bool:
 
     if isinstance(body['services']['service'], list):
         for p in body['services']['service']:
-            if p['system_name'] == config.APP_NAME:
+            if p['system_name'] == params['system_name']:
                 return p
 
-    if body['services']['service']['system_name'] == config.APP_NAME:
+    if body['services']['service']['system_name'] == params['system_name']:
         return body['services']['service']
 
     return None
@@ -44,18 +45,15 @@ def _create(params: dict) -> dict:
     api_url = f'/admin/api/services.xml'
     body, status = rest.post(api_url, params)
 
-    if rest.is_status_error(status):
-        rest.exit_by_exists()
+    rest.manage_error(status, body)
 
     return body['service']
 
 
-def _update(params: dict, id: str) -> dict:
+def _update(params: dict) -> dict:
 
-    api_url = f'/admin/api/services/{id}.xml'
+    api_url = f"/admin/api/services/{params['id']}.xml"
     body, status = rest.put(api_url, params)
 
-    if rest.is_status_error(status):
-        rest.exit_by_exists(status, body)
-
+    rest.manage_error(status, body)
     return body['service']

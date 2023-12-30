@@ -4,14 +4,13 @@ import os
 import urllib3
 
 REPO_PATH = os.environ["REPO_PATH"]
-WORKINGDIR_PATH = os.path.join(REPO_PATH, '.devops/openshift/3scale/')
-
-URL_BASE = os.environ["THREESCALE_URL_BASE"]
-TOKEN = os.environ["THREESCALE_TOKEN"]
-
+URL_BASE = os.environ["URL_BASE"]
+TOKEN = os.environ["TOKEN"]
 APP_ENV = os.environ["APP_ENV"]
 APP_NAME = os.environ["APP_NAME"] + '-' + APP_ENV
-APP_BACKEND_ENDPOINT = os.environ["APP_BACKEND_ENDPOINT"]
+
+SUB_PATH = '.devops/openshift/3scale/'
+WORKINGDIR_PATH = os.path.join(REPO_PATH, SUB_PATH)
 
 
 def config_app():

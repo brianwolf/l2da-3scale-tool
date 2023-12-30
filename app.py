@@ -1,6 +1,7 @@
 import config
-from services import product
+from services import backend, product
 
 config.config_app()
 
-product.create()
+p = product.create()
+bs = backend.create(p['id'])

@@ -6,14 +6,14 @@ import config
 from utils import extension
 
 
-def is_status_error(status: int) -> bool:
-    return status > 201 and status != 422
+def manage_error(status: int, body: dict):
 
+    if status == 422:
+        logging.warning(body)
 
-def exit_by_exists(status: int, body: dict):
-
-    logging.info(f'Element already exists')
-    exit(0)
+    if status > 201:
+        logging.info(f'Element already exists')
+        exit(0)
 
 
 def post(url: str, body: dict) -> tuple[dict, int]:
@@ -39,7 +39,7 @@ def put(url: str, body: dict) -> tuple[dict, int]:
     if url.endswith('.xml') and response.text:
         return extension.xml_to_dict(response.text), response.status_code
 
-    return extension.json_to_dict(response.text), response.status_codee
+    return extension.json_to_dict(response.text), response.status_code
 
 
 def get(url: str, body: dict) -> tuple[dict, int]:
@@ -52,4 +52,4 @@ def get(url: str, body: dict) -> tuple[dict, int]:
     if url.endswith('.xml') and response.text:
         return extension.xml_to_dict(response.text), response.status_code
 
-    return extension.json_to_dict(response.text), response.status_codee
+    return extension.json_to_dict(response.text), response.status_code
