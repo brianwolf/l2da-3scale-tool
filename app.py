@@ -1,5 +1,6 @@
 import config
-from services import backend, product, add_backend_to_product, application_plan, policies
+from services import (account, add_backend_to_product, application_plan,
+                      backend, policies, product)
 
 config.config_app()
 
@@ -11,3 +12,5 @@ add_backend_to_product.create(p['id'], bs)
 application_plan.create(p['id'])
 
 policies.create(p['id'])
+
+account.create()

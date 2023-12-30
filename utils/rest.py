@@ -12,7 +12,7 @@ def manage_error(status: int, body: dict):
         logging.warning(body)
 
     if status > 201:
-        logging.info(f'Element already exists')
+        logging.info(f'Error in 3scale -> status: {status} | body: {body}')
         exit(0)
 
 

@@ -45,12 +45,14 @@ def _get_in_product(params: dict, product_id: str) -> bool:
     api_url = f'/admin/api/services/{product_id}/application_plans.xml'
     body, _ = rest.get(api_url, {})
 
-    if isinstance(body['plans']['plan'], dict):
-        body['plans']['plan'] = [body['plans']['plan']]
+    if body['plans'] and 'plan' in body['plans']:
 
-    for b in body['plans']['plan']:
-        if b['name'] == params['name']:
-            return b
+        if isinstance(body['plans']['plan'], dict):
+            body['plans']['plan'] = [body['plans']['plan']]
+
+        for b in body['plans']['plan']:
+            if b['name'] == params['name']:
+                return b
 
     return None
 
