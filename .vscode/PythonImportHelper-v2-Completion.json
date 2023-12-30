@@ -1,0 +1,417 @@
+[
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "urllib3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib3",
+        "description": "urllib3",
+        "detail": "urllib3",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "configs",
+        "description": "configs",
+        "isExtraImport": true,
+        "detail": "configs",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "configs",
+        "description": "configs",
+        "isExtraImport": true,
+        "detail": "configs",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "configs",
+        "description": "configs",
+        "isExtraImport": true,
+        "detail": "configs",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "importPath": "configs",
+        "description": "configs",
+        "isExtraImport": true,
+        "detail": "configs",
+        "documentation": {}
+    },
+    {
+        "label": "rest",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "extension",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "extension",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "xmltodict",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "xmltodict",
+        "description": "xmltodict",
+        "detail": "xmltodict",
+        "documentation": {}
+    },
+    {
+        "label": "yaml",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "yaml",
+        "description": "yaml",
+        "detail": "yaml",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "product",
+        "importPath": "services",
+        "description": "services",
+        "isExtraImport": true,
+        "detail": "services",
+        "documentation": {}
+    },
+    {
+        "label": "config_app",
+        "kind": 2,
+        "importPath": "3scale-python.configs.config",
+        "description": "3scale-python.configs.config",
+        "peekOfCode": "def config_app():\n    urllib3.disable_warnings()\n    logging.basicConfig(\n        format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)",
+        "detail": "3scale-python.configs.config",
+        "documentation": {}
+    },
+    {
+        "label": "REPO_PATH",
+        "kind": 5,
+        "importPath": "3scale-python.configs.config",
+        "description": "3scale-python.configs.config",
+        "peekOfCode": "REPO_PATH = os.environ[\"REPO_PATH\"]\nWORKINGDIR_PATH = os.path.join(REPO_PATH, '.devops/openshift/3scale/')\nURL_BASE = os.environ[\"THREESCALE_URL_BASE\"]\nTOKEN = os.environ[\"THREESCALE_TOKEN\"]\nAPP_ENV = os.environ[\"APP_ENV\"]\nAPP_NAME = os.environ[\"APP_NAME\"] + '-' + APP_ENV\nAPP_BACKEND_ENDPOINT = os.environ[\"APP_BACKEND_ENDPOINT\"]\ndef config_app():\n    urllib3.disable_warnings()\n    logging.basicConfig(",
+        "detail": "3scale-python.configs.config",
+        "documentation": {}
+    },
+    {
+        "label": "WORKINGDIR_PATH",
+        "kind": 5,
+        "importPath": "3scale-python.configs.config",
+        "description": "3scale-python.configs.config",
+        "peekOfCode": "WORKINGDIR_PATH = os.path.join(REPO_PATH, '.devops/openshift/3scale/')\nURL_BASE = os.environ[\"THREESCALE_URL_BASE\"]\nTOKEN = os.environ[\"THREESCALE_TOKEN\"]\nAPP_ENV = os.environ[\"APP_ENV\"]\nAPP_NAME = os.environ[\"APP_NAME\"] + '-' + APP_ENV\nAPP_BACKEND_ENDPOINT = os.environ[\"APP_BACKEND_ENDPOINT\"]\ndef config_app():\n    urllib3.disable_warnings()\n    logging.basicConfig(\n        format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)",
+        "detail": "3scale-python.configs.config",
+        "documentation": {}
+    },
+    {
+        "label": "URL_BASE",
+        "kind": 5,
+        "importPath": "3scale-python.configs.config",
+        "description": "3scale-python.configs.config",
+        "peekOfCode": "URL_BASE = os.environ[\"THREESCALE_URL_BASE\"]\nTOKEN = os.environ[\"THREESCALE_TOKEN\"]\nAPP_ENV = os.environ[\"APP_ENV\"]\nAPP_NAME = os.environ[\"APP_NAME\"] + '-' + APP_ENV\nAPP_BACKEND_ENDPOINT = os.environ[\"APP_BACKEND_ENDPOINT\"]\ndef config_app():\n    urllib3.disable_warnings()\n    logging.basicConfig(\n        format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)",
+        "detail": "3scale-python.configs.config",
+        "documentation": {}
+    },
+    {
+        "label": "TOKEN",
+        "kind": 5,
+        "importPath": "3scale-python.configs.config",
+        "description": "3scale-python.configs.config",
+        "peekOfCode": "TOKEN = os.environ[\"THREESCALE_TOKEN\"]\nAPP_ENV = os.environ[\"APP_ENV\"]\nAPP_NAME = os.environ[\"APP_NAME\"] + '-' + APP_ENV\nAPP_BACKEND_ENDPOINT = os.environ[\"APP_BACKEND_ENDPOINT\"]\ndef config_app():\n    urllib3.disable_warnings()\n    logging.basicConfig(\n        format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)",
+        "detail": "3scale-python.configs.config",
+        "documentation": {}
+    },
+    {
+        "label": "APP_ENV",
+        "kind": 5,
+        "importPath": "3scale-python.configs.config",
+        "description": "3scale-python.configs.config",
+        "peekOfCode": "APP_ENV = os.environ[\"APP_ENV\"]\nAPP_NAME = os.environ[\"APP_NAME\"] + '-' + APP_ENV\nAPP_BACKEND_ENDPOINT = os.environ[\"APP_BACKEND_ENDPOINT\"]\ndef config_app():\n    urllib3.disable_warnings()\n    logging.basicConfig(\n        format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)",
+        "detail": "3scale-python.configs.config",
+        "documentation": {}
+    },
+    {
+        "label": "APP_NAME",
+        "kind": 5,
+        "importPath": "3scale-python.configs.config",
+        "description": "3scale-python.configs.config",
+        "peekOfCode": "APP_NAME = os.environ[\"APP_NAME\"] + '-' + APP_ENV\nAPP_BACKEND_ENDPOINT = os.environ[\"APP_BACKEND_ENDPOINT\"]\ndef config_app():\n    urllib3.disable_warnings()\n    logging.basicConfig(\n        format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)",
+        "detail": "3scale-python.configs.config",
+        "documentation": {}
+    },
+    {
+        "label": "APP_BACKEND_ENDPOINT",
+        "kind": 5,
+        "importPath": "3scale-python.configs.config",
+        "description": "3scale-python.configs.config",
+        "peekOfCode": "APP_BACKEND_ENDPOINT = os.environ[\"APP_BACKEND_ENDPOINT\"]\ndef config_app():\n    urllib3.disable_warnings()\n    logging.basicConfig(\n        format='%(asctime)s - %(levelname)s - %(message)s', level=logging.INFO)",
+        "detail": "3scale-python.configs.config",
+        "documentation": {}
+    },
+    {
+        "label": "create",
+        "kind": 2,
+        "importPath": "3scale-python.services.product",
+        "description": "3scale-python.services.product",
+        "peekOfCode": "def create() -> dict:\n    logging.info(f\"Product -> WORKING...\")\n    params = extension.get_params_from_yaml('product.yaml')\n    product = _get(params)\n    if not product:\n        product = _create(params)\n    product = _update(params, product['id'])\n    logging.info('Product -> FINISHED')\n    logging.info('-----------------------------------')\n    return product",
+        "detail": "3scale-python.services.product",
+        "documentation": {}
+    },
+    {
+        "label": "xml_to_dict",
+        "kind": 2,
+        "importPath": "3scale-python.utils.extension",
+        "description": "3scale-python.utils.extension",
+        "peekOfCode": "def xml_to_dict(xml: str) -> any:\n    if xml:\n        return json.loads(json.dumps(xmltodict.parse(xml)))\n    return {}\ndef json_to_dict(json_str: str) -> any:\n    if json_str:\n        return json.loads(json_str)\n    return {}\ndef yaml_to_dict(yaml_str: str) -> any:\n    if yaml:",
+        "detail": "3scale-python.utils.extension",
+        "documentation": {}
+    },
+    {
+        "label": "json_to_dict",
+        "kind": 2,
+        "importPath": "3scale-python.utils.extension",
+        "description": "3scale-python.utils.extension",
+        "peekOfCode": "def json_to_dict(json_str: str) -> any:\n    if json_str:\n        return json.loads(json_str)\n    return {}\ndef yaml_to_dict(yaml_str: str) -> any:\n    if yaml:\n        return yaml.load(yaml_str, Loader=yaml.FullLoader)\n    return {}\ndef get_file_content(path: str) -> str:\n    with open(path, 'r') as f:",
+        "detail": "3scale-python.utils.extension",
+        "documentation": {}
+    },
+    {
+        "label": "yaml_to_dict",
+        "kind": 2,
+        "importPath": "3scale-python.utils.extension",
+        "description": "3scale-python.utils.extension",
+        "peekOfCode": "def yaml_to_dict(yaml_str: str) -> any:\n    if yaml:\n        return yaml.load(yaml_str, Loader=yaml.FullLoader)\n    return {}\ndef get_file_content(path: str) -> str:\n    with open(path, 'r') as f:\n        return f.read()\ndef get_params_from_yaml(yaml_name: str) -> any:\n    path = os.path.join(config.WORKINGDIR_PATH, config.APP_ENV, yaml_name)\n    return yaml_to_dict(get_file_content(path))",
+        "detail": "3scale-python.utils.extension",
+        "documentation": {}
+    },
+    {
+        "label": "get_file_content",
+        "kind": 2,
+        "importPath": "3scale-python.utils.extension",
+        "description": "3scale-python.utils.extension",
+        "peekOfCode": "def get_file_content(path: str) -> str:\n    with open(path, 'r') as f:\n        return f.read()\ndef get_params_from_yaml(yaml_name: str) -> any:\n    path = os.path.join(config.WORKINGDIR_PATH, config.APP_ENV, yaml_name)\n    return yaml_to_dict(get_file_content(path))",
+        "detail": "3scale-python.utils.extension",
+        "documentation": {}
+    },
+    {
+        "label": "get_params_from_yaml",
+        "kind": 2,
+        "importPath": "3scale-python.utils.extension",
+        "description": "3scale-python.utils.extension",
+        "peekOfCode": "def get_params_from_yaml(yaml_name: str) -> any:\n    path = os.path.join(config.WORKINGDIR_PATH, config.APP_ENV, yaml_name)\n    return yaml_to_dict(get_file_content(path))",
+        "detail": "3scale-python.utils.extension",
+        "documentation": {}
+    },
+    {
+        "label": "is_status_error",
+        "kind": 2,
+        "importPath": "3scale-python.utils.rest",
+        "description": "3scale-python.utils.rest",
+        "peekOfCode": "def is_status_error(status: int) -> bool:\n    return status > 201 and status != 422\ndef exit_by_exists(status: int, body: dict):\n    logging.info(f'Element already exists')\n    exit(0)\ndef post(url: str, body: dict) -> tuple[dict, int]:\n    url = f'{config.URL_BASE}/{url}'\n    body['access_token'] = config.TOKEN\n    response = requests.post(url, body, verify=False)\n    if url.endswith('.xml'):",
+        "detail": "3scale-python.utils.rest",
+        "documentation": {}
+    },
+    {
+        "label": "exit_by_exists",
+        "kind": 2,
+        "importPath": "3scale-python.utils.rest",
+        "description": "3scale-python.utils.rest",
+        "peekOfCode": "def exit_by_exists(status: int, body: dict):\n    logging.info(f'Element already exists')\n    exit(0)\ndef post(url: str, body: dict) -> tuple[dict, int]:\n    url = f'{config.URL_BASE}/{url}'\n    body['access_token'] = config.TOKEN\n    response = requests.post(url, body, verify=False)\n    if url.endswith('.xml'):\n        return extension.xml_to_dict(response.text), response.status_code\n    return extension.json_to_dict(response.text), response.status_code",
+        "detail": "3scale-python.utils.rest",
+        "documentation": {}
+    },
+    {
+        "label": "post",
+        "kind": 2,
+        "importPath": "3scale-python.utils.rest",
+        "description": "3scale-python.utils.rest",
+        "peekOfCode": "def post(url: str, body: dict) -> tuple[dict, int]:\n    url = f'{config.URL_BASE}/{url}'\n    body['access_token'] = config.TOKEN\n    response = requests.post(url, body, verify=False)\n    if url.endswith('.xml'):\n        return extension.xml_to_dict(response.text), response.status_code\n    return extension.json_to_dict(response.text), response.status_code\ndef put(url: str, body: dict) -> tuple[dict, int]:\n    url = f'{config.URL_BASE}/{url}'\n    body['access_token'] = config.TOKEN",
+        "detail": "3scale-python.utils.rest",
+        "documentation": {}
+    },
+    {
+        "label": "put",
+        "kind": 2,
+        "importPath": "3scale-python.utils.rest",
+        "description": "3scale-python.utils.rest",
+        "peekOfCode": "def put(url: str, body: dict) -> tuple[dict, int]:\n    url = f'{config.URL_BASE}/{url}'\n    body['access_token'] = config.TOKEN\n    response = requests.put(url, body, verify=False)\n    if url.endswith('.xml') and response.text:\n        return extension.xml_to_dict(response.text), response.status_code\n    return extension.json_to_dict(response.text), response.status_codee\ndef get(url: str, body: dict) -> tuple[dict, int]:\n    url = f'{config.URL_BASE}/{url}'\n    body['access_token'] = config.TOKEN",
+        "detail": "3scale-python.utils.rest",
+        "documentation": {}
+    },
+    {
+        "label": "get",
+        "kind": 2,
+        "importPath": "3scale-python.utils.rest",
+        "description": "3scale-python.utils.rest",
+        "peekOfCode": "def get(url: str, body: dict) -> tuple[dict, int]:\n    url = f'{config.URL_BASE}/{url}'\n    body['access_token'] = config.TOKEN\n    response = requests.get(url, body, verify=False)\n    if url.endswith('.xml') and response.text:\n        return extension.xml_to_dict(response.text), response.status_code\n    return extension.json_to_dict(response.text), response.status_codee",
+        "detail": "3scale-python.utils.rest",
+        "documentation": {}
+    },
+    {
+        "label": "create_backend",
+        "kind": 2,
+        "importPath": "3scale-python.3scale",
+        "description": "3scale-python.3scale",
+        "peekOfCode": "def create_backend(backend: any) -> any:\n    logging.info(f\"Backend -> CREATING... {backend['name']}\")\n    api_url = f'admin/api/backend_apis.json'\n    body, status = _post(api_url, backend)\n    if status == 422:\n        _exit_by_exists(body, status)\n    logging.info('Backend -> CREATED')\n    logging.info('-----------------------------------')\n    return body['backend_api']\ndef add_backend_to_product(backend_to_product: any) -> any:",
+        "detail": "3scale-python.3scale",
+        "documentation": {}
+    },
+    {
+        "label": "add_backend_to_product",
+        "kind": 2,
+        "importPath": "3scale-python.3scale",
+        "description": "3scale-python.3scale",
+        "peekOfCode": "def add_backend_to_product(backend_to_product: any) -> any:\n    logging.info(f\"Backend to product -> ADDING...\")\n    service_id = backend_to_product['service_id']\n    api_url = f'/admin/api/services/{service_id}/backend_usages.json'\n    body, status = _post(api_url, backend_to_product)\n    if status == 422:\n        _exit_by_exists(body, status)\n    logging.info('Backend to product -> ADDED')\n    logging.info('-----------------------------------')\n    return body",
+        "detail": "3scale-python.3scale",
+        "documentation": {}
+    },
+    {
+        "label": "create_product",
+        "kind": 2,
+        "importPath": "3scale-python.3scale",
+        "description": "3scale-python.3scale",
+        "peekOfCode": "def create_product(product: any) -> any:\n    logging.info(f\"Product -> CREATING... {product['name']}\")\n    api_url = f'/admin/api/services.xml'\n    body, status = _post(api_url, product)\n    if status == 422:\n        _exit_by_exists(body, status)\n    logging.info('Product -> CREATED')\n    logging.info('-----------------------------------')\n    return body['service']\ndef create_application_plan(application_plan: any) -> any:",
+        "detail": "3scale-python.3scale",
+        "documentation": {}
+    },
+    {
+        "label": "create_application_plan",
+        "kind": 2,
+        "importPath": "3scale-python.3scale",
+        "description": "3scale-python.3scale",
+        "peekOfCode": "def create_application_plan(application_plan: any) -> any:\n    logging.info(f\"Application plan -> CREATING...\")\n    service_id = application_plan['service_id']\n    api_url = f'/admin/api/services/{service_id}/application_plans.xml'\n    body, status = _post(api_url, application_plan)\n    if status == 422:\n        _exit_by_exists(body, status)\n    logging.info('Application plan -> CREATED')\n    logging.info('-----------------------------------')\n    return body['plan']",
+        "detail": "3scale-python.3scale",
+        "documentation": {}
+    },
+    {
+        "label": "add_policies",
+        "kind": 2,
+        "importPath": "3scale-python.3scale",
+        "description": "3scale-python.3scale",
+        "peekOfCode": "def add_policies(policies: any) -> any:\n    logging.info(f\"Policies -> ADDING...\")\n    service_id = policies['service_id']\n    api_url = f'/admin/api/services/{service_id}/proxy/policies.json'\n    body, status = _put(api_url, policies)\n    if status == 422:\n        _exit_by_exists(body, status)\n    logging.info('Policies -> ADDED')\n    logging.info('-----------------------------------')\n    return body",
+        "detail": "3scale-python.3scale",
+        "documentation": {}
+    },
+    {
+        "label": "create_application",
+        "kind": 2,
+        "importPath": "3scale-python.3scale",
+        "description": "3scale-python.3scale",
+        "peekOfCode": "def create_application(app: any) -> any:\n    logging.info(f\"Application -> CREATING...\")\n    account_id = app['account_id']\n    api_url = f\"/admin/api/accounts/{account_id}/applications.xml\"\n    body, status = _post(api_url, app)\n    if status == 422:\n        _exit_by_exists(body, status)\n    logging.info('Application -> CREATED')\n    logging.info('-----------------------------------')\n    return body['application']",
+        "detail": "3scale-python.3scale",
+        "documentation": {}
+    },
+    {
+        "label": "create_account",
+        "kind": 2,
+        "importPath": "3scale-python.3scale",
+        "description": "3scale-python.3scale",
+        "peekOfCode": "def create_account(account: any) -> any:\n    logging.info(f\"Account -> CREATING...\")\n    api_url = f\"buyers/accounts\"\n    body, status = _post(api_url, account)\n    print(body)\n    print(status)\n    if status == 422:\n        _exit_by_exists(body, status)\n    logging.info('Account -> CREATED')\n    logging.info('-----------------------------------')",
+        "detail": "3scale-python.3scale",
+        "documentation": {}
+    },
+    {
+        "label": "APP_ENV",
+        "kind": 5,
+        "importPath": "3scale-python.3scale",
+        "description": "3scale-python.3scale",
+        "peekOfCode": "APP_ENV = os.environ[\"APP_ENV\"]\nAPP_NAME = os.environ[\"APP_NAME\"] + '-' + APP_ENV\nAPP_BACKEND_ENDPOINT = os.environ[\"APP_BACKEND_ENDPOINT\"]\n# ---------------------------------------------\n# Methods\n# ---------------------------------------------\ndef create_backend(backend: any) -> any:\n    logging.info(f\"Backend -> CREATING... {backend['name']}\")\n    api_url = f'admin/api/backend_apis.json'\n    body, status = _post(api_url, backend)",
+        "detail": "3scale-python.3scale",
+        "documentation": {}
+    },
+    {
+        "label": "APP_NAME",
+        "kind": 5,
+        "importPath": "3scale-python.3scale",
+        "description": "3scale-python.3scale",
+        "peekOfCode": "APP_NAME = os.environ[\"APP_NAME\"] + '-' + APP_ENV\nAPP_BACKEND_ENDPOINT = os.environ[\"APP_BACKEND_ENDPOINT\"]\n# ---------------------------------------------\n# Methods\n# ---------------------------------------------\ndef create_backend(backend: any) -> any:\n    logging.info(f\"Backend -> CREATING... {backend['name']}\")\n    api_url = f'admin/api/backend_apis.json'\n    body, status = _post(api_url, backend)\n    if status == 422:",
+        "detail": "3scale-python.3scale",
+        "documentation": {}
+    },
+    {
+        "label": "APP_BACKEND_ENDPOINT",
+        "kind": 5,
+        "importPath": "3scale-python.3scale",
+        "description": "3scale-python.3scale",
+        "peekOfCode": "APP_BACKEND_ENDPOINT = os.environ[\"APP_BACKEND_ENDPOINT\"]\n# ---------------------------------------------\n# Methods\n# ---------------------------------------------\ndef create_backend(backend: any) -> any:\n    logging.info(f\"Backend -> CREATING... {backend['name']}\")\n    api_url = f'admin/api/backend_apis.json'\n    body, status = _post(api_url, backend)\n    if status == 422:\n        _exit_by_exists(body, status)",
+        "detail": "3scale-python.3scale",
+        "documentation": {}
+    },
+    {
+        "label": "product",
+        "kind": 5,
+        "importPath": "3scale-python.3scale",
+        "description": "3scale-python.3scale",
+        "peekOfCode": "product = create_product({\n    'name': APP_NAME,\n    'system_name': APP_NAME,\n    'description': APP_NAME,\n})\nbackend = create_backend({\n    'name': APP_NAME,\n    'system_name': APP_NAME,\n    'description': APP_NAME,\n    'private_endpoint': APP_BACKEND_ENDPOINT,",
+        "detail": "3scale-python.3scale",
+        "documentation": {}
+    },
+    {
+        "label": "backend",
+        "kind": 5,
+        "importPath": "3scale-python.3scale",
+        "description": "3scale-python.3scale",
+        "peekOfCode": "backend = create_backend({\n    'name': APP_NAME,\n    'system_name': APP_NAME,\n    'description': APP_NAME,\n    'private_endpoint': APP_BACKEND_ENDPOINT,\n})\nadd_backend_to_product({\n    'service_id': product['id'],\n    'backend_api_id': backend['id'],\n    'path': '/',",
+        "detail": "3scale-python.3scale",
+        "documentation": {}
+    },
+    {
+        "label": "application_plan",
+        "kind": 5,
+        "importPath": "3scale-python.3scale",
+        "description": "3scale-python.3scale",
+        "peekOfCode": "application_plan = create_application_plan({\n    'service_id': product['id'],\n    'name': APP_NAME,\n    'system_name': APP_NAME,\n    'state_event': 'publish'\n})\nprint(application_plan)\nadd_policies({\n    'service_id': product['id'],\n    'policies_config': \"\"\"[",
+        "detail": "3scale-python.3scale",
+        "documentation": {}
+    }
+]
