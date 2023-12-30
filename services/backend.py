@@ -3,7 +3,7 @@ import logging
 from utils import extension, rest
 
 
-def create(product_id: str) -> dict:
+def create() -> list[dict]:
 
     logging.info(f"Backends -> WORKING...")
 
@@ -16,15 +16,13 @@ def create(product_id: str) -> dict:
     for p in params:
 
         backend = _get(p)
-        
+
         if not backend:
             backend = _create(p)
 
         p['id'] = backend['id']
 
         backend = _update(p)
-
-        _add_backend_to_product(backend['id'], product_id, p['path'])
 
         backends.append(backend)
 
@@ -64,15 +62,3 @@ def _update(params: dict) -> dict:
     rest.manage_error(status, body)
 
     return body['backend_api']
-
-
-def _add_backend_to_product(backend_id: str, product_id: str, path: str):
-
-    api_url = f"/admin/api/services/{product_id}/backend_usages.json"
-    body, status = rest.post(api_url, {
-        'backend_api_id': backend_id,
-        'service_id': product_id,
-        'path': path
-    })
-
-    rest.manage_error(status, body)
