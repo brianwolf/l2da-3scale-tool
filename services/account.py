@@ -1,6 +1,5 @@
 import logging
 
-import config
 from utils import extension, rest
 
 
@@ -30,9 +29,14 @@ def _get(params: dict) -> bool:
     api_url = f'/admin/api/accounts.xml'
     body, _ = rest.get(api_url, params)
 
-    for b in body['accounts']['account']:
-        if b['org_name'] == params['org_name']:
-            return b
+    if 'accounts' in body and 'account' in body['accounts']:
+
+        if isinstance(body['accounts']['account'], dict):
+            body['accounts']['account'] = [body['accounts']['account']]
+
+        for b in body['accounts']['account']:
+            if b['org_name'] == params['org_name']:
+                return b
 
     return None
 
@@ -44,7 +48,7 @@ def _create(params: dict) -> dict:
 
     rest.manage_error(status, body)
 
-    return body
+    return body['account']
 
 
 def _update(params: dict) -> dict:
@@ -54,4 +58,4 @@ def _update(params: dict) -> dict:
 
     rest.manage_error(status, body)
 
-    return body
+    return body['account']
