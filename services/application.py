@@ -26,7 +26,7 @@ def create(account_id: str, app_plan_id: str) -> dict:
     return app
 
 
-def _get(params: dict) -> bool:
+def _get(params: dict) -> dict:
 
     api_url = f"/admin/api/accounts/{params['account_id']}/applications.xml"
     body, _ = rest.get(api_url, {})

@@ -27,7 +27,7 @@ def create(product_id: str, backends: list[dict]):
     logging.info('-----------------------------------')
 
 
-def _get(params: dict, product_id: str) -> bool:
+def _get(params: dict, product_id: str) -> dict:
 
     api_url = f'/admin/api/services/{product_id}/backend_usages.json'
     body, _ = rest.get(api_url, {})

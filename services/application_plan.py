@@ -25,7 +25,7 @@ def create(product_id: str) -> list[dict]:
     return app_plan
 
 
-def _get(params: dict) -> bool:
+def _get(params: dict) -> dict:
 
     api_url = f'/admin/api/application_plans.xml'
     body, _ = rest.get(api_url, {})

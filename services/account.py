@@ -24,7 +24,7 @@ def create() -> dict:
     return account
 
 
-def _get(params: dict) -> bool:
+def _get(params: dict) -> dict:
 
     api_url = f'/admin/api/accounts.xml'
     body, _ = rest.get(api_url, params)
