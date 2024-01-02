@@ -29,13 +29,14 @@ def _get(params: dict) -> dict:
     api_url = f'/admin/api/services.xml'
     body, _ = rest.get(api_url, params)
 
-    if isinstance(body['services']['service'], list):
+    if 'services' in body and 'service' in body['services']:
+
+        if isinstance(body['services']['service'], dict):
+            body['services']['service'] = [body['services']['service']]
+
         for p in body['services']['service']:
             if p['system_name'] == params['system_name']:
                 return p
-
-    if body['services']['service']['system_name'] == params['system_name']:
-        return body['services']['service']
 
     return None
 
